@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context="com.example.dell.lavozdeljunco.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="403dp"
+        android:layout_height="588dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="4dp">
+
+        <Button
+            android:id="@+id/b_sintonizar"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sintonizar"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="44dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_alignBottom="@+id/imageButton3"
+            android:layout_toRightOf="@+id/imageButton3"
+            android:layout_toEndOf="@+id/imageButton3" />
+
+        <Button
+            android:id="@+id/button11"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="Programación"
+            android:onClick="callprogra"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/button12"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Directorio"
+            android:layout_above="@+id/button11"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/b_call"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Llámanos"
+            android:onClick="callcall"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_above="@+id/button12"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/button14"
+            style="@android:style/Widget.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Historia"
+            android:onClick="callhistory"
+            android:textSize="12sp"
+            android:layout_above="@+id/b_call"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="11dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            app:srcCompat="@drawable/red"
+            android:onClick="callinsta"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:layout_above="@+id/button14"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/face"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:onClick="callface"
+            android:layout_alignTop="@+id/imageButton3"
+            android:layout_toRightOf="@+id/b_sintonizar"
+            android:layout_toEndOf="@+id/b_sintonizar"
+            android:layout_alignBottom="@+id/b_sintonizar" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
