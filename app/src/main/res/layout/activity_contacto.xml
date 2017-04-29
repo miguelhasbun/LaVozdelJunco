@@ -14,28 +14,28 @@
 
         <Button
             android:id="@+id/b_fijo"
-            android:layout_width="227dp"
+            android:layout_width="match_parent"
             android:layout_height="62dp"
-            android:layout_alignLeft="@+id/b_contacto"
-            android:layout_alignStart="@+id/b_contacto"
             android:layout_below="@+id/b_contacto"
             android:layout_marginTop="70dp"
             android:text="Llama al 26432525"
+            android:drawableLeft="@drawable/telc"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="213dp"
             android:layout_alignRight="@+id/b_contacto"
-            android:layout_alignEnd="@+id/b_contacto" />
+            android:layout_alignEnd="@+id/b_contacto"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <Button
             android:id="@+id/b_contacto"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp"
-            android:text="Llama al 97709696" />
+            android:text="Llama al 97709696"
+            android:drawableLeft="@drawable/telf"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
 
         <EditText
             android:id="@+id/editText"
@@ -70,18 +70,20 @@
             android:layout_alignParentRight="true"
             android:layout_below="@+id/editText2"
             android:layout_marginTop="36dp"
+            android:drawableLeft="@drawable/check"
             android:text="Enviar mensaje!" />
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/editText"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
             android:gravity="center"
             android:text="Mensajes de texto!"
-            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:layout_below="@+id/b_fijo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="22dp" />
 
     </RelativeLayout>
 

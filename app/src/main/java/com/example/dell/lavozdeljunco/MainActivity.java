@@ -151,6 +151,19 @@ public class MainActivity extends AppCompatActivity {
         Intent URLinsta = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/vozdeljunco54/?hl=es"));
         startActivity(URLinsta);
     }
+
+    public void callhistoria(View view){
+        Intent URLhistoria = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lavozdeljunco.com/historia.php"));
+        startActivity(URLhistoria);
+    }
+
+    public void calldirectorio(View view){
+        Intent URLdirectorio = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.lavozdeljunco.com/djs.php"));
+        startActivity(URLdirectorio);
+    }
+
+
+
     public void callcall(View view){
         Intent i= new Intent(this, Contacto.class);
         startActivity(i);
