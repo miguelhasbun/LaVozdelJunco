@@ -16,24 +16,73 @@
             android:id="@+id/b_fijo"
             android:layout_width="227dp"
             android:layout_height="62dp"
-            android:text="LLAMA A NUESTRO TELÉFONO FIJO"
+            android:layout_alignLeft="@+id/b_contacto"
+            android:layout_alignStart="@+id/b_contacto"
+            android:layout_below="@+id/b_contacto"
+            android:layout_marginTop="70dp"
+            android:text="Llama al 26432525"
             tools:layout_editor_absoluteX="29dp"
             tools:layout_editor_absoluteY="213dp"
-            android:layout_marginTop="70dp"
-            android:layout_below="@+id/b_contacto"
-            android:layout_alignLeft="@+id/b_contacto"
-            android:layout_alignStart="@+id/b_contacto" />
+            android:layout_alignRight="@+id/b_contacto"
+            android:layout_alignEnd="@+id/b_contacto" />
 
         <Button
             android:id="@+id/b_contacto"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Llama a nuestro celular"
-            android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:layout_marginLeft="24dp"
-            android:layout_marginStart="24dp" />
+            android:layout_marginStart="24dp"
+            android:text="Llama al 97709696" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="+50497709696"
+            android:inputType="phone"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Escriba el texto aquí..."
+            android:layout_below="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/b_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editText2"
+            android:layout_marginTop="36dp"
+            android:text="Enviar mensaje!" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="Mensajes de texto!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 //TODO STREAMING
+
+
         Toast.makeText(this, "Espere alrededor de 20 segundos,estamos sintonizando", Toast.LENGTH_LONG).show();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
